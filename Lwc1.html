@@ -1,0 +1,51 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-arround_medium" if:true={visible}>
+			<h1 class="slds-text-heading_large">
+				Trazer dados da Empresa
+			</h1>
+			<p> Empresa: {Aempresa}</p>
+			<p> CNPJ: {Acnpj} </p>
+			<p> Endereço: {Aendereco} </p>
+		</div>
+
+		<lightning-button variant="brand" label="Some dados da Empresa" title="Alterar Visible" onclick={trocarDiv}
+			class="slds-m-left_x-small"></lightning-button>
+
+		<br/>
+		<br/>
+
+		<div class="slds-m-arround_medium" if:true={visible1}>
+			<h1 class="slds-text-heading_large">
+				Trazer dados do Produto
+			</h1>
+			<p> Produto: {Bproduto}</p>
+			<p> Descrição: {Bdescricao} </p>
+			<p> Preço: {Bpreco} </p>
+		</div>
+
+
+
+
+
+		<div class="slds-m-arround_medium" if:true={visible1}>
+			<h1 class="slds-text-heading_large">
+				Trazer dados da Promoção
+			</h1>
+			<p> oferta1: {Coferta1}</p>
+			<p> oferta2: {Coferta2} </p>
+
+		</div>
+		<br/>
+		<lightning-button variant="destructive" label="Some o Div2 e Div3" title="Destructive action" onclick={trocarDiv1}
+			class="slds-m-left_x-small"></lightning-button>
+
+
+
+
+		<!--acrescimo aqui-->
+
+
+
+	</lightning-card>
+</template>
